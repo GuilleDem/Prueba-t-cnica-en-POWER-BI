@@ -20,6 +20,7 @@ PARTE 1 MODELADO
   Costo total = [Cantidad Vendida]*[Costo]
   
 * Calcular el Ingreso Total(Cantidad Vendida * Precio Unitario)
+  
   Ingreso total = [Cantidad Vendida]*[Precio Unitario]
 
 
@@ -30,10 +31,12 @@ PARTE 2 ANÁLISIS Y VISUALIZACIÓN DE DATOS : DASHBOARDS INTERACTIVO
 * Segmento de cliente: distribución de ventas por segmento de clientes
 
 * Top 3 productos mas vendidos: usa una medida para mostrar los 3 productos con mayores ingresos
+  
   Top3 =
 IF(RANKX(ALL(Productos),[Ventas t], ) <= 3, [Ventas t], BLANK())
 
 * Crear medida Promedio de Ventas por cliente
+  
   Promedio de ventas por cliente = AVERAGEX(ALL(Clientes),[Ventas t])
   
 * Crear una etiqueta donde nos muestre la venta total, solo de cliente PREMIUM
