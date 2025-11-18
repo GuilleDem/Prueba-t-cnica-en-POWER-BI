@@ -8,12 +8,14 @@ PARTE 1 MODELADO
 * Establecer relaciones entre las tablas
   
 * Establecer una tabla calendario
+  
   Calendario = CALENDAR(MIN(Ventas[Fecha]), MAX(Ventas[Fecha]))
   Año = YEAR([Date])
   Mes = FORMAT([Date], "mmmm")
   MesNo = MONTH([Date])
 
 * Calcular el Costo Total para cada venta(Cantidad Vendida * Costo de Producto)
+  
   Costo = RELATED(Productos[Costo])  >  me trae  la columna  de otra tabla
   Costo total = [Cantidad Vendida]*[Costo]
   
