@@ -1,4 +1,4 @@
-# Prueba-ténica-en-POWER-BI
+# Prueba-tenica-en-POWER-BI
 https://www.youtube.com/watch?v=h_OqFvhmwoE
 
 PRUEBA TÉCNICA DE TRABAJO EN POWER BI
